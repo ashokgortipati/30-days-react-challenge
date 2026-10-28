@@ -1,0 +1,134 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color palette and typography */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef0ff, #f5efff, #e8f6f5);
+  color: #202344;
+  min-height: 100vh;
+}
+
+/* Center the app */
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Main card */
+#root > div {
+  width: 100%;
+  max-width: 460px;
+  padding: 36px 30px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #e8e8f4;
+  border-radius: 26px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(47, 43, 100, 0.12);
+}
+
+/* Heading */
+h3 {
+  color: #25264b;
+  font-size: 29px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+
+/* Descriptions */
+p {
+  color: #777b96;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* Mood button grid */
+.emoij {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 28px 0;
+}
+
+/* Emoji spacing */
+.emoij button label {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Mood buttons */
+.emoij button {
+  padding: 22px 12px;
+  border: 1.5px solid #e5e5f2;
+  border-radius: 18px;
+  background: #fafaff;
+  color: #484967;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.emoij button:hover {
+  background: #f0efff;
+  border-color: #aaa5ef;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(91, 82, 199, 0.10);
+}
+
+/* Press effect */
+.emoij button:active {
+  transform: scale(0.97);
+}
+
+/* Selected mood */
+.emoij button.mood-option.selected {
+  background: #e5f7ef;
+  color: #22694f;
+  border: 2px solid #5bc49a;
+  box-shadow: 0 6px 18px rgba(47, 165, 120, 0.12);
+}
+
+/* Reset button */
+.reset {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: auto;
+  min-width: 150px;
+  padding: 13px 24px;
+  background: #fff0f1;
+  color: #a84454;
+  border: 1px solid #f5d4d9;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  transition: all 0.25s ease;
+  margin-bottom: 1.5rem;
+}
+
+.reset:hover {
+  background: #fce0e4;
+  border-color: #e9aab5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(168, 68, 84, 0.10);
+}
+

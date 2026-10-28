@@ -1,0 +1,75 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eff6ff;
+  color: #1e293b;
+}
+
+/* Registration container */
+.Container {
+  width: min(420px, calc(100% - 64px));
+  margin: 60px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.1);
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Inputs and dropdown */
+input,
+select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+}
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Register button */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Submitted details */
+.Container > div:not(:first-child) {
+  margin-top: 24px;
+}
+
+h2 {
+  color: #1d4ed8;
+  font-size: 21px;
+}
+
+p {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
