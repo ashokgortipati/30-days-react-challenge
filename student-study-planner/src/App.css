@@ -1,0 +1,162 @@
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* Main container */
+.container {
+  width: 90%;
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  color: #172554;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  color: #334155;
+  font-size: 21px;
+  margin: 30px 0 18px;
+}
+
+/* Input section */
+.container input {
+  width: 72%;
+  padding: 13px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.container input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Buttons */
+button {
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.container > div button {
+  margin-left: 8px;
+  background: #2563eb;
+  color: white;
+}
+
+.container > div button:hover {
+  background: #1d4ed8;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+/* Task text */
+li span {
+  flex: 1;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+/* Complete button */
+li button:first-of-type {
+  background: #dcfce7;
+  color: #166534;
+}
+
+li button:first-of-type:hover {
+  background: #bbf7d0;
+}
+
+/* Delete button */
+li button:last-of-type {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+li button:last-of-type:hover {
+  background: #fecaca;
+}
+
+/* Empty message */
+.container p {
+  text-align: center;
+  color: #64748b;
+  padding: 20px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .container {
+    width: 94%;
+    margin: 25px auto;
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .container > div button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+
+  li span {
+    flex-basis: 100%;
+  }
+}
